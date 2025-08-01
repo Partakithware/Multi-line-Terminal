@@ -1,0 +1,59 @@
+vteterminal {
+    /* General background and foreground */
+    background-color: #272727; /* Dark grey */
+    color: #eeeeec; /* Light grey */
+
+    /* Font settings */
+    font-family: "Monospace", "Noto Mono", monospace;
+    font-size: 11pt;
+
+    /* Padding around the terminal content */
+    padding: 5px; 
+}
+
+/* Style the cursor */
+vteterminal cursor {
+    background-color: #ffffff; /* White cursor */
+}
+
+/* Style the GtkTextView for input */
+textview {
+    background-color: #1a1a1a; /* Even darker background for input */
+    color: #e0e0e0; /* Lighter text color */
+    padding: 5px; /* Padding inside the text view */
+}
+
+/* Style the scrolled window containing the textview for borders/padding */
+.input-scroll-window {
+    border-radius: 5px; 
+    border: 1px solid #4a4a4a;
+    margin: 5px; /* Margin around the input area */
+}
+
+/* Style the scrolled window when it's focused */
+.input-scroll-window:focus-within {
+    border-color: #729fcf; /* Blue border when focused */
+}
+
+/* Style for the input panel label */
+.input-panel-label {
+    background-color: #3a3a3a; /* Slightly lighter dark grey for the panel */
+    color: #ffffff; /* White text for the label */
+    padding: 5px 10px; /* Vertical and horizontal padding */
+    font-weight: bold; /* Make the text bold */
+    border-top-left-radius: 5px; /* Match the input box's border radius */
+    border-top-right-radius: 5px;
+    margin-left: 5px; /* Match input box margin */
+    margin-right: 5px;
+    margin-bottom: 0px; /* No margin at the bottom to sit flush with input box */
+}
+
+/* Optional: Style the scrollbars themselves */
+scrollbar {
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+scrollbar slider {
+    background-color: #6a6a6a;
+    border-radius: 3px;
+}
